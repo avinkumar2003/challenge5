@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>Artificial intelligence</h1>
+	<p><em>
+Artificial intelligence (AI) is the ability of a computer
+or a robot controlled by a computer to do tasks
+ that are usually done by humans 
+because they require human intelligence and discernment.
+</em></p>
+	<img src="bg2" /><br><br>
+    <center>
+	<button onclick="darkMode()">Darkmode</button><br><br>
+	<button onclick="lightMode()">LightMode</button><br><br>
+</center>
+	<script>
+		function darkMode() {
+			let element = document.body;
+			let content = document.getElementById("DarkModetext");
+			element.className = "dark-mode";
+			content.innerText = "Dark Mode is ON";
+		}
+		function lightMode() {
+			let element = document.body;
+			let content = document.getElementById("DarkModetext");
+			element.className = "light-mode";
+			content.innerText = "Dark Mode is OFF";
+		}
+	</script>
+</body>
+</html>
